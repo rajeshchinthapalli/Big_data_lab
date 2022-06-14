@@ -1,0 +1,24 @@
+hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop fs -put wordcountFile wordCountFile
+put: Call From admin1-HP-280-G4-MT-Business-PC/127.0.1.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop fs -put wordcountFile wordCountFile
+put: Call From admin1-HP-280-G4-MT-Business-PC/127.0.1.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop fs -put wordcountFile wordCountFile
+put: Call From admin1-HP-280-G4-MT-Business-PC/127.0.1.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop jar MRProgramsDemo.jar PackageDemo.WordCount wordCountFile MRDir1
+JAR does not exist or is not a normal file: /home/hdoop/MRProgramsDemo.jar
+hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop jar excercise3.jar excercise3.WordCount wordCountFile MRDir1
+JAR does not exist or is not a normal file: /home/hdoop/excercise3.jar
+hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop fs -put /home/hdoop/wordcountFile
+put: Call From admin1-HP-280-G4-MT-Business-PC/127.0.1.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+hdoop@admin1-HP-280-G4-MT-Business-PC:~$ start-all.sh
+WARNING: Attempting to start all Apache Hadoop daemons as hdoop in 10 seconds.
+WARNING: This is not a recommended production deployment configuration.
+WARNING: Use CTRL-C to abort.
+Starting namenodes on [localhost]
+Starting datanodes
+Starting secondary namenodes [admin1-HP-280-G4-MT-Business-PC]
+Starting resourcemanager
+Starting nodemanagers
+hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop fs -put /home/hdoop/wordcountFile
+2022-06-14 10:50:22,862 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+hdoop@admin1-HP-280-G4-MT-Business-PC:~$ 
