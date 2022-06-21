@@ -1,16 +1,10 @@
-hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop fs -put wordcountFile wordCountFile
-put: Call From admin1-HP-280-G4-MT-Business-PC/127.0.1.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
-hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop fs -put wordcountFile wordCountFile
-put: Call From admin1-HP-280-G4-MT-Business-PC/127.0.1.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
-hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop fs -put wordcountFile wordCountFile
-put: Call From admin1-HP-280-G4-MT-Business-PC/127.0.1.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
-hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop jar MRProgramsDemo.jar PackageDemo.WordCount wordCountFile MRDir1
-JAR does not exist or is not a normal file: /home/hdoop/MRProgramsDemo.jar
-hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop jar excercise3.jar excercise3.WordCount wordCountFile MRDir1
-JAR does not exist or is not a normal file: /home/hdoop/excercise3.jar
-hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop fs -put /home/hdoop/wordcountFile
-put: Call From admin1-HP-280-G4-MT-Business-PC/127.0.1.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
-hdoop@admin1-HP-280-G4-MT-Business-PC:~$ start-all.sh
+hdoop@admin1-HP-280-G4-MT-Business-PC:~$ cd $HDOOP_HOME
+hdoop@admin1-HP-280-G4-MT-Business-PC:~$ cd $HADOOP_HOME
+hdoop@admin1-HP-280-G4-MT-Business-PC:~/hadoop-3.2.1$ cd sbin
+hdoop@admin1-HP-280-G4-MT-Business-PC:~/hadoop-3.2.1/sbin$ jps
+3867 org.eclipse.equinox.launcher_1.5.600.v20191014-2022.jar
+4940 Jps
+hdoop@admin1-HP-280-G4-MT-Business-PC:~/hadoop-3.2.1/sbin$ start-all.sh
 WARNING: Attempting to start all Apache Hadoop daemons as hdoop in 10 seconds.
 WARNING: This is not a recommended production deployment configuration.
 WARNING: Use CTRL-C to abort.
@@ -18,7 +12,107 @@ Starting namenodes on [localhost]
 Starting datanodes
 Starting secondary namenodes [admin1-HP-280-G4-MT-Business-PC]
 Starting resourcemanager
-Starting nodemanagers
-hdoop@admin1-HP-280-G4-MT-Business-PC:~$ hadoop fs -put /home/hdoop/wordcountFile
-2022-06-14 10:50:22,862 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
-hdoop@admin1-HP-280-G4-MT-Business-PC:~$ 
+hdoop@admin1-HP-280-G4-MT-Business-PC:~/hadoop-3.2.1/sbin$ hdfs dfs -mkdir -p ~ /input
+hdoop@admin1-HP-280-G4-MT-Business-PC:~/hadoop-3.2.1/sbin$ hdfs dfs -appendToFile -~/input/a.txt
+appendToFile: missing destination argument
+hdoop@admin1-HP-280-G4-MT-Business-PC:~/hadoop-3.2.1/sbin$ hdfs dfs -appendToFile - ~/input/a.txt
+jhgv dfjsk
+kiegfnkdvh
+dzof
+kjdgk2022-06-21 09:08:03,446 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+hdoop@admin1-HP-280-G4-MT-Business-PC:~/hadoop-3.2.1/sbin$ hadoop jar /home/hdoop/Desktop/1nt19is125/rajesh.jar ~/input ~/output
+JAR does not exist or is not a normal file: /home/hdoop/Desktop/1nt19is125/rajesh.jar
+hdoop@admin1-HP-280-G4-MT-Business-PC:~/hadoop-3.2.1/sbin$ hadoop jar /home/Desktop/1nt19is125/rajesh.jar ~/input ~/output
+JAR does not exist or is not a normal file: /home/Desktop/1nt19is125/rajesh.jar
+hdoop@admin1-HP-280-G4-MT-Business-PC:~/hadoop-3.2.1/sbin$ hadoop jar /home/Desktop/rajesh.jar ~/input ~/output
+JAR does not exist or is not a normal file: /home/Desktop/rajesh.jar
+hdoop@admin1-HP-280-G4-MT-Business-PC:~/hadoop-3.2.1/sbin$ hadoop jar /home/hdoop/rajesh.jar ~/input ~/output
+2022-06-21 09:13:38,095 INFO client.RMProxy: Connecting to ResourceManager at /127.0.0.1:8032
+2022-06-21 09:13:38,358 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2022-06-21 09:13:38,375 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/hdoop/.staging/job_1655782542459_0001
+2022-06-21 09:13:38,490 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2022-06-21 09:13:38,595 INFO input.FileInputFormat: Total input files to process : 1
+2022-06-21 09:13:38,675 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2022-06-21 09:13:38,733 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2022-06-21 09:13:38,749 INFO mapreduce.JobSubmitter: number of splits:1
+2022-06-21 09:13:38,874 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2022-06-21 09:13:38,890 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1655782542459_0001
+2022-06-21 09:13:38,890 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-06-21 09:13:39,007 INFO conf.Configuration: resource-types.xml not found
+2022-06-21 09:13:39,007 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-06-21 09:13:39,175 INFO impl.YarnClientImpl: Submitted application application_1655782542459_0001
+2022-06-21 09:13:39,206 INFO mapreduce.Job: The url to track the job: http://admin1-HP-280-G4-MT-Business-PC:8088/proxy/application_1655782542459_0001/
+2022-06-21 09:13:39,207 INFO mapreduce.Job: Running job: job_1655782542459_0001
+2022-06-21 09:13:44,267 INFO mapreduce.Job: Job job_1655782542459_0001 running in uber mode : false
+2022-06-21 09:13:44,269 INFO mapreduce.Job:  map 0% reduce 0%
+2022-06-21 09:13:48,318 INFO mapreduce.Job:  map 100% reduce 0%
+2022-06-21 09:13:52,345 INFO mapreduce.Job:  map 100% reduce 100%
+2022-06-21 09:13:52,363 INFO mapreduce.Job: Job job_1655782542459_0001 completed successfully
+2022-06-21 09:13:52,420 INFO mapreduce.Job: Counters: 54
+	File System Counters
+		FILE: Number of bytes read=69
+		FILE: Number of bytes written=451045
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=141
+		HDFS: Number of bytes written=43
+		HDFS: Number of read operations=8
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=1372
+		Total time spent by all reduces in occupied slots (ms)=1569
+		Total time spent by all map tasks (ms)=1372
+		Total time spent by all reduce tasks (ms)=1569
+		Total vcore-milliseconds taken by all map tasks=1372
+		Total vcore-milliseconds taken by all reduce tasks=1569
+		Total megabyte-milliseconds taken by all map tasks=1404928
+		Total megabyte-milliseconds taken by all reduce tasks=1606656
+	Map-Reduce Framework
+		Map input records=4
+		Map output records=5
+		Map output bytes=53
+		Map output materialized bytes=69
+		Input split bytes=109
+		Combine input records=5
+		Combine output records=5
+		Reduce input groups=5
+		Reduce shuffle bytes=69
+		Reduce input records=5
+		Reduce output records=5
+		Spilled Records=10
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=60
+		CPU time spent (ms)=740
+		Physical memory (bytes) snapshot=487997440
+		Virtual memory (bytes) snapshot=5081477120
+		Total committed heap usage (bytes)=517996544
+		Peak Map Physical memory (bytes)=295481344
+		Peak Map Virtual memory (bytes)=2537259008
+		Peak Reduce Physical memory (bytes)=192516096
+		Peak Reduce Virtual memory (bytes)=2544218112
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=32
+	File Output Format Counters 
+		Bytes Written=43
+hdoop@admin1-HP-280-G4-MT-Business-PC:~/hadoop-3.2.1/sbin$ hdfs dfs -cat ~/output/part*
+2022-06-21 09:14:27,598 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+dfjsk	1
+dzof	1
+jhgv	1
+kiegfnkdvh	1
+kjdgk	1
